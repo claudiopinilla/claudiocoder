@@ -21,6 +21,7 @@ header .navbar a {
 
 body {
   background-color: orange;
+  /*Media queries*/
 }
 body p {
   color: crimson;
@@ -43,6 +44,11 @@ body footer p {
   font-size: 14px;
   color: white;
   background-color: #333;
+}
+@media screen and (max-width: 700px) {
+  body .navbar, body .list {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
