@@ -38,20 +38,17 @@
     <p>Tel: (011) 4703-2883</p>
     <p>ventas@gidemasrl.com</p>
     
-    <!--Formulario-->
+    <!--Formulario Bootstrap-->
     <h2>Formulario de Contacto</h2>
 
-    <form action="/submit" method="post">
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" id="nombre">
-
-        <label for="email">E-mail:</label>
-        <input type="text" name="email" id="email">
-
-        <label for="mensaje">Tu Mensaje:</label>
-        <textarea name="mensaje" id="mensaje"></textarea>
-
-    </form>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">E-Mail</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Tu Mensaje</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
 
      
 

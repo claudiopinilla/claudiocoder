@@ -1,0 +1,53 @@
+/* Nesting */
+
+header {
+background-color: orange;
+  nav {
+    
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    gap: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #333;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    flex-wrap: wrap;
+    }
+}
+body {
+
+    background-color: orange;
+    p {
+        color:crimson;
+    font-size: 12px;
+    }
+
+    h1 {
+        font-size: 40px;
+    color:chartreuse;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    footer p{
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    background-color: #333;
+    }
+}
+       

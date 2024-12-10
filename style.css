@@ -1,75 +1,48 @@
-/* Color de Fuente parrafos */
-p {
-    color:crimson;
-    font-size: 12px;
-    
-    
-}
-
-/* Estilo de Fuente Titulos */
-h1 {
-    font-size: 40px;
-    color:chartreuse;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-}
-
-
-/*Tamaño de Fuente Items de Lista*/
-li {font-size: 24px;}
-
-/*Estilos header*/
+/* Nesting */
 header {
-    background-color: orange
+  background-color: orange;
 }
-/*Estilos body*/
+header nav {
+  display: flex;
+  margin: 20px;
+  padding: 20px;
+  gap: 40px;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #333;
+  flex-wrap: wrap;
+}
+header .navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  flex-wrap: wrap;
+}
+
 body {
-    background-color:orange;
+  background-color: orange;
+}
+body p {
+  color: crimson;
+  font-size: 12px;
+}
+body h1 {
+  font-size: 40px;
+  color: chartreuse;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body .list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+body footer p {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  background-color: #333;
 }
 
-/* Estilo navbar*/
-.navbar {
-    display: flex;
-    margin: 20px;
-    padding: 20px;
-    gap: 40px;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #333;
-    flex-wrap: wrap;
-}
-
-/*Estilo enlaces navbar*/
-.navbar a{
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
-    flex-wrap: wrap;
-
-}
-
-/*Estilo lista*/
-.list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
-}
-
-/*Estilo footer*/
-footer p{
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
-    font-size: 14px;
-    color: white;
-    background-color: #333;
-}
-
-/*Media queries*/
-@media screen and (max-width: 700px){
-
-    .navbar, .list{
-        flex-direction: column;
-    }
-}
+/*# sourceMappingURL=style.css.map */
